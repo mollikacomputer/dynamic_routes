@@ -1,9 +1,9 @@
-import React from 'react';
+import Navbar from "@/components/Navbar";
 
 const layout = ({children}) => {
     return (
         <div>
-            <p>Nav Bar items here</p>
+            <Navbar/>
             {children}
         </div>
     );

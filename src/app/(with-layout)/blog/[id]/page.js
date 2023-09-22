@@ -1,13 +1,15 @@
 import Link from "next/link";
 
-const SingleBlog = ({params}) => {
-    // const [year, id] = params.segments || [];
+const SingleBlog = async ({params}) => {
+    const res = await fetch(`https://jsonplaceholder.typicode.com/posts/${params.id}`);
+    const data = await res.json();
     return (
         <div>
-            <h2 className='text-2xl font-bold text-yellow-400 text-center'> Single Blog {params.id} </h2>
+            <h2 className='text-2xl font-bold text-yellow-400 text-center'>{data.id}. {data.title} </h2>
+            <p>{data.body}</p>
             {/* <p>{year || new Date().getFullYear()} For id {id}</p> */}
 
-            <button className="rounded-full border" > <Link href={"/blog"} >Go to blog page</Link>  </button>
+            <button className=" bg-blue-400 text-white px-2 py-1" > <Link href={"/blog"} >Go to blog page</Link>  </button>
         </div>
     );
 };

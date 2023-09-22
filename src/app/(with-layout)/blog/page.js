@@ -10,7 +10,7 @@ const BlogsPage = async () => {
                 <div className="block border-inherit" key={id} >
                     <h2>{id}. {title}</h2>
                     <p>{body}</p>
-                    <button className="btn " > <Link href={`/blog/${id}`}> Read More... </Link> </button>
+                    <button className="btn px-2 py-1 bg-blue-400 text-white" > <Link href={`/blog/${id}`}> Read More... </Link> </button>
                 </div>
             ))}           
         </div>

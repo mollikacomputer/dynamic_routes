@@ -1,0 +1,48 @@
+{
+    "users":[
+        {
+            "id":1,
+            "name":"Ranjit K Mandal",
+            "email":"ranjit@kmandal.com",
+            "phone":"01300241001"
+        },
+        {
+            "id":2,
+            "name":"Biswajit karmakar",
+            "email":"biswajit@karmakar.com",
+            "phone":"01400000000"
+        },
+        {
+            "id":3,
+            "name":"Debdas Paul",
+            "email":"debdas@paul.com",
+            "phone":"01500000000"
+        }
+    ],
+    "services":[
+        {
+            "id":1,
+            "serviceName":"Web Development",
+            "developer":"Tinku Talukder",
+            "mobile":"01900000000"
+        },
+        {
+            "id":2,
+            "serviceName":"SEO Expert",
+            "developer":"Bimol Karmakar",
+            "mobile":"019990000"
+        },
+        {
+            "id":3,
+            "serviceName":"Digital Marketer",
+            "developer":"sankar",
+            "mobile":"01770000000"
+        },
+        {
+            "id":4,
+            "serviceName":"Marketer",
+            "developer":"Rinku Saha",
+            "mobile":"01700000000"
+        }
+    ]
+}

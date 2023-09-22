@@ -1,4 +1,7 @@
-
+export const metadata ={
+    title:"service||Ranjit",
+    description:"Service meta description",
+};
 const ServicePage = () => {
     return (
         <div>

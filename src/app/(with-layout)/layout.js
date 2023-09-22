@@ -1,12 +1,12 @@
-import Navbar from "@/components/Navbar";
+import Navbar from "@/components/Navbar"
 
-const layout = ({children}) => {
-    return (
-        <div>
-            <Navbar/>
-            {children}
-        </div>
-    );
-};
-
-export default layout;
+export default function RootLayout({ children }) {
+ return (
+    <html lang="en">
+      <body>
+        <Navbar/>
+        {children}
+        </body>
+    </html>
+  )
+}

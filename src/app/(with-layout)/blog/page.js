@@ -1,9 +1,13 @@
+import loadBlogsData from "@/utils/loadBlogsData";
 import Link from "next/link";
 
-const BlogsPage = async () => {
-    const res = await fetch("https://jsonplaceholder.typicode.com/posts");
-    const blogs = await res.json(); 
+export const metadata = {
+    title:"blog||Ranjit",
+    description:"Blog Layout meta data description",
+};
 
+const BlogsPage = async () => {
+    const blogs = await loadBlogsData();
     return (
         <div>
             {blogs.map(({id, title, body})=>(

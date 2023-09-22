@@ -9,9 +9,9 @@ export const metadata = {
 const BlogsPage = async () => {
     const blogs = await loadBlogsData();
     return (
-        <div>
+        <div className="container mx-auto">
             {blogs.map(({id, title, body})=>(
-                <div className="block border-inherit" key={id} >
+                <div className="block border-solid border-2 border-indego-600 mb-2 p-2 rounded" key={id} >
                     <h2>{id}. {title}</h2>
                     <p>{body}</p>
                     <button className="btn px-2 py-1 bg-blue-400 text-white" > <Link href={`/blog/${id}`}> Read More... </Link> </button>

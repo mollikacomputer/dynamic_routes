@@ -20,6 +20,10 @@ const navItemsLink = [
         path:"/blog",
         title:"Blog",
     },
+    {
+        path:"/dashboard",
+        title:"Dashboard",
+    },
 ]
 
 const Navbar = () => {

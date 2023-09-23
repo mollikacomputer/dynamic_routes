@@ -30,19 +30,7 @@
             "id":1,
             "title":"iPhone 12",
             "price":999,
-            "CategoryId":1,
-            "features":[
-                "A14 Bionic chip",
-                "Supper Retina XDR Display",
-                "Dual Camera system"
-            ],
-            "imageUrl":"https://example.com/iphone12.jpg"
-        },
-        {
-            "id":1,
-            "title":"iPhone 12",
-            "price":999,
-            "CategoryId":1,
+            "categoryId":1,
             "features":[
                 "A14 Bionic chip",
                 "Supper Retina XDR Display",
@@ -54,7 +42,7 @@
             "id":2,
             "title":"Samsung Galaxy A12",
             "price":899,
-            "CategoryId":1,
+            "categoryId":1,
             "features":[
                 "A20 Bionic chip",
                 "Supper Retina XPRm Display 12 inches",
@@ -66,7 +54,7 @@
             "id":3,
             "title":"Oppo",
             "price":799,
-            "CategoryId":1,
+            "categoryId":1,
             "features":[
                 "A14 Redial chip",
                 "Supper Retina XDM Display",
@@ -76,9 +64,21 @@
         },
         {
             "id":4,
+            "title":"iPhone 12",
+            "price":999,
+            "categoryId":1,
+            "features":[
+                "A14 Bionic chip",
+                "Supper Retina XDR Display",
+                "Dual Camera system"
+            ],
+            "imageUrl":"https://example.com/iphone12.jpg"
+        },
+        {
+            "id":5,
             "title":"T-Shirt",
             "price":299,
-            "CategoryId":2,
+            "categoryId":2,
             "features":[
                 "100% cotton",
                 "Red blue green",
@@ -87,10 +87,10 @@
             "imageUrl":"https://example.com/tshirt.jpg"
         },
         {
-            "id":5,
+            "id":6,
             "title":"Panjabi",
             "price":399,
-            "CategoryId":2,
+            "categoryId":2,
             "features":[
                 "100% cotton Panjabi",
                 "Payjama",
@@ -99,10 +99,10 @@
             "imageUrl":"https://example.com/panjabi12.jpg"
         },
         {
-            "id":6,
+            "id":7,
             "title":"Shirt",
             "price":299,
-            "CategoryId":2,
+            "categoryId":2,
             "features":[
                 "Cotton Shirt",
                 "Full Shirt",
@@ -111,10 +111,10 @@
             "imageUrl":"https://example.com/shirt2.jpg"
         },
         {
-            "id":7,
+            "id":8,
             "title":"English Book",
             "price":99,
-            "CategoryId":3,
+            "categoryId":3,
             "features":[
                 "Old Book",
                 "Scratch"
@@ -122,10 +122,10 @@
             "imageUrl":"https://example.com/book2.jpg"
         },
         {
-            "id":8,
+            "id":9,
             "title":"English Book",
             "price":199,
-            "CategoryId":3,
+            "categoryId":3,
             "features":[
                 "New Book",
                 "Scratch"
@@ -133,10 +133,10 @@
             "imageUrl":"https://example.com/book2.jpg"
         },
         {
-            "id":9,
+            "id":10,
             "title":"Women Snow",
             "price":55,
-            "CategoryId":4,
+            "categoryId":4,
             "features":[
                 "Fear & Lovely",
                 "Bangladeshi"
@@ -144,10 +144,10 @@
             "imageUrl":"https://example.com/snow2.jpg"
         },
         {
-            "id":10,
+            "id":11,
             "title":"Men Snow",
             "price":65,
-            "CategoryId":4,
+            "categoryId":4,
             "features":[
                 "Fear & Lovely",
                 "Indian"
@@ -155,10 +155,10 @@
             "imageUrl":"https://example.com/snow1.jpg"
         },
         {
-            "id":11,
+            "id":12,
             "title":"Bat & ball",
             "price":150,
-            "CategoryId":5,
+            "categoryId":5,
             "features":[
                 "Bat and ball",
                 "stiker"
@@ -166,10 +166,10 @@
             "imageUrl":"https://example.com/batball1.jpg"
         },
         {
-            "id":12,
+            "id":13,
             "title":"Foot ball",
             "price":199,
-            "CategoryId":5,
+            "categoryId":5,
             "features":[
                 "Football",
                 "net"
@@ -177,10 +177,10 @@
             "imageUrl":"https://example.com/batball1.jpg"
         },
         {
-            "id":13,
+            "id":14,
             "title":"Car toys",
             "price":99,
-            "CategoryId":6,
+            "categoryId":6,
             "features":[
                 "Car",
                 "Remote control"
@@ -188,10 +188,10 @@
             "imageUrl":"https://example.com/car1.jpg"
         },
         {
-            "id":14,
+            "id":15,
             "title":"Doll",
             "price":19,
-            "CategoryId":6,
+            "categoryId":6,
             "features":[
                 "Doll",
                 "Remote control"

@@ -16,7 +16,7 @@ const sidebarLink = [
 ];
 const Sidebar = () => {
   return (
-    <aside className="grid container mx-auto">
+    <aside className="w-1/4 mr-10">
       <nav>
         <ul>
           <h2 className="text-2xl font-bold text-yellow-300 mb-4">

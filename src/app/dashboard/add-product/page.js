@@ -1,4 +1,5 @@
 import React from 'react';
+import AddProductModal from '../manage-products/modall';
 
 const AddProductPage = () => {
     return (

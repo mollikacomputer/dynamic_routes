@@ -3,7 +3,7 @@ import Sidebar from './Sidebar';
 
 const DashboardLayout = ({children}) => {
     return (
-        <div className='container mx-auto' >
+        <div className='container flex mx-auto' >
             <Sidebar/>
             {children}
         </div>

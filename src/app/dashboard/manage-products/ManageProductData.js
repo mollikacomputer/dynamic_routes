@@ -1,40 +1,40 @@
-"use client"
+import getAllProducts from "@/utils/getAllProducts";
+import ManageSingleProduct from "./ManageSingleProduct";
 
-import { useRef, useState } from "react";
-import AddProductModal from "./modall";
 
-const ManageProductData = ({id, title, price}) => {
-  const modalRef = useRef(null);
-  const [updateData, setUpdateData] = useState(null);
+const ManageProductData = async() => {
+  const products = await getAllProducts();
+  // const modalRef = useRef(null);
+  // const [updateData, setUpdateData] = useState(null);
   
-  const openModal = ({id, title, price}) =>{
-    setUpdateData(id, title, price);
-    modalRef.current.showModal()
-  };
+  // const openModal = ({id, title, price}) =>{
+  //   setUpdateData(id, title, price);
+  //   modalRef.current.showModal()
+  // };
 
-  const closeModal = () =>{
-    setUpdateData(null);
-    modalRef.current.closeModal();
-  };
+  // const closeModal = () =>{
+  //   setUpdateData(null);
+  //   modalRef.current.closeModal();
+  // };
 
   return (
-    <tr>
-      <td className="border border-slate-300 p-4 "> {id}. </td>
-      <td className="border border-slate-300 p-4 "> {title} </td>
-      <td className="border border-slate-300 p-4 "> {price} </td>
-      <td className="border border-slate-300 p-4 text-center ">
-      <button
-        className="btn"
-        onClick={() => openModal()}
-      >
-        Edit
-      </button>
-        
-      </td>
-      <td className="border border-slate-300 p-4 "> Delete </td>
-
-      <AddProductModal closeModal={closeModal} updateData={updateData} ref={modalRef} id={id} title={title} price={price}  />
-    </tr>
+    <div >
+       <table className="w-full">
+      <thead>
+        <tr>
+          <th className='border border-slate-400 p-2'>Product Name</th>
+          <th className='border border-slate-400 p-2'>Price</th>
+          <th className='border border-slate-400 p-2'>Edit</th>
+          <th className='border border-slate-400 p-2'>Delete</th>
+        </tr>
+      </thead>
+      <tbody>
+        {
+          products.map((product)=>(<ManageSingleProduct key={product.id} product={product} />))
+        }
+      </tbody>
+    </table>
+    </div>
   );
 };
 

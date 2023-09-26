@@ -1,8 +1,8 @@
-import React from 'react';
+import React, { forwardRef } from 'react';
 
-const Modal = () => {
+const Modal = ({}, ref) => {
     return (
-        <dialog className='w-[98%] max-w-[500px] rounded-md'>
+        <dialog ref={ref} className='w-[98%] max-w-[500px] rounded-md'>
             <div className='text-right mb-4'>
                 <button>Close</button>
             </div>
@@ -27,4 +27,4 @@ const Modal = () => {
     );
 };
 
-export default Modal;
+export default forwardRef(Modal);
